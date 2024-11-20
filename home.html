@@ -2,11 +2,11 @@
 <html lang="en">
 
 <head>
-	<title>HomePage</title>
+	<title>Main</title>
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
 	<!-- <style>body{opacity: 0;}</style> -->
-	<link rel="stylesheet" href="css/style.min.css?_v=20241118213710">
+	<link rel="stylesheet" href="css/style.min.css?_v=20241120180308">
 	<link rel="shortcut icon" href="favicon.ico">
 	<!-- <meta name="robots" content="noindex, nofollow"> -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -16,7 +16,7 @@
 	<div class="wrapper">
 		<header class="header">
 			<div class="header__container">
-				<a href="#" class="header__logo">
+				<a href="home.html" class="header__logo">
 					Лого компании
 				</a>
 				<div class="header__menu menu">
@@ -29,12 +29,12 @@
 						</ul>
 						<div class="menu__contact">
 							<div class="menu__title">Контакты</div>
-							<a href="mailto:e.asanov@nimet.io" class="menu__email">e.asanov@nimet.io</a>
+							<a href="mailto:info@nimet.io" class="menu__email">info@nimet.io</a>
 						</div>
 					</nav>
 				</div>
-				<a data-da=".menu__contact,767.98 ,1" href="tel:0672196701" class="header__phone">
-					067 219 67 01
+				<a data-da=".menu__contact,767.98 ,1" href="tel:380732884891" class="header__phone">
+					+38 073 288 48 91
 				</a>
 				<button type="button" class="menu__icon icon-menu"><span></span></button>
 			</div>
@@ -50,28 +50,126 @@
 					<button type="button" class="main__button button">хочу консультацию</button>
 				</div>
 			</section>
+			<section class="page__about about">
+				<div class="about__container">
+					<h2 class="about__title title title--small">Про компанию</h2>
+					<div class="about__body body-about">
+						<div class="body-about__image">
+							<img src="img/main/about/01.webp" class="body-about__picture" alt="Image">
+						</div>
+						<div class="body-about__content">
+							<p class="body-about__text text">
+								Мы максимально не выпячиваем свой бренд. У каждого клиента система в цветах и логотипах его компании. Мы ненавязчиво помогаем
+								решить хаос в компании.
+							</p>
+							<div class="body-about__items">
+								<div class="body-about__item item-about">
+									<div class="item-about__value">1+</div>
+									<div class="item-about__text">Мы ненавязчиво помогаем решить хаос в компании.</div>
+								</div>
+								<div class="body-about__item item-about item-about_border">
+									<div class="item-about__value">2+</div>
+									<div class="item-about__text">Мы максимально не выпячиваем свой бренд. </div>
+								</div>
+								<div class="body-about__item item-about">
+									<div class="item-about__value">3+</div>
+									<div class="item-about__text">У каждого клиента система в цветах  и логотипах его компании.</div>
+								</div>
+							</div>
+							<button type="button" class="body-about__button button">Кейсы</button>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="page__offers offers">
+				<div class="offers__container">
+					<h2 class="offers__title title title--small">предложения</h2>
+					<div class="offers__body body-offers">
+						<div class="body-offers__item">
+							<div class="body-offers__image">
+								<img src="img/main/offers/01.webp" class="body-offers__picture" alt="Image">
+							</div>
+							<p class="body-offers__text text">
+								У каждого клиента система в цветах и логотипах его компании.
+							</p>
+						</div>
+						<div class="body-offers__item">
+							<div class="body-offers__image body-offers__line">
+								<img src="img/main/offers/02.webp" class="body-offers__picture" alt="Image">
+							</div>
+							<p class="body-offers__text text">
+								У каждого клиента система в цветах и логотипах его компании.
+							</p>
+						</div>
+						<div class="body-offers__item">
+							<div class="body-offers__image">
+								<img src="img/main/offers/03.webp" class="body-offers__picture" alt="Image">
+							</div>
+							<p class="body-offers__text text">
+								У каждого клиента система в цветах и логотипах его компании.
+							</p>
+						</div>
+					</div>
+				</div>
+			</section>
+			<div class="page__consultation consultation">
+				<div class="consultation__container">
+					<h2 class="consultation__title title title--small">зАПИСЬ НА КОНСУЛЬТАЦИЮ</h2>
+					<form data-no-validate data-ajax action="sendmail/sendmail.php" method="POST" class="consultation__form form-consultation">
+						<h4 class="form-consultation__title">ОБСУДИМ cотрудничество?</h4>
+						<input autocomplete="off" type="text" name="form[text]" placeholder="Ваше имя" class="form-consultation__input form-consultation__input_name input" required>
+						<input autocomplete="off" type="tel" name="form[tel]" placeholder="Телефон" class="form-consultation__input input" required oninput="this.value = this.value.replace(/[^0-9+\-\(\)\s]/g, '')">
+						<input autocomplete="off" type="email" name="form[email]" placeholder="Почта" required class="form-consultation__input form-consultation__input_email input">
+						<textarea autocomplete="off" name="form[textarea]" placeholder="Коротко о проекте" class="form-consultation__input form-consultation__input_textarea input" required></textarea>
+						<button type="submit" class="form-consultation__button button button--fw">
+							<span class="form-consultation__button_pc">Отправить заявку</span>
+							<span class="form-consultation__button_mob">кейсы</span>
+						</button>
+					</form>
+					<div class="consultation__image">
+						<img src="img/main/consultation/01.webp" class="consultation__picture" alt="Image">
+					</div>
+				</div>
+			</div>
 		</main>
 		<footer class="footer">
 			<div class="footer__container">
-				<a href="#" class="footer__logo">
-					Лого компании
-				</a>
-				<div class="footer__items">
-					<ul class="footer__list">
-						<li class="footer__item"><a href="#" class="footer__link">О НАС</a></li>
-						<li class="footer__item"><a href="#" class="footer__link">Услуги</a></li>
-						<li class="footer__item"><a href="#" class="footer__link">Услуги</a></li>
-						<li class="footer__item"><a href="#" class="footer__link">Отзывы</a></li>
-					</ul>
+				<div class="footer__logo logo-footer">
+					<a href="home.html" class="logo-footer__link">
+						Лого компании
+					</a>
 				</div>
-				<div class="footer__contact">
-					<div class="footer__title">Контакты</div>
-					<a href="0672196701" class="footer__phone">067 219 67 01</a>
-					<a href="mailto:e.asanov@nimet.io" class="footer__email">e.asanov@nimet.io</a>
+				<div class="footer__body">
+					<div class="footer__items">
+						<ul class="footer__list">
+							<li class="footer__item"><a href="#" class="footer__link">О НАС</a></li>
+							<li class="footer__item"><a href="#" class="footer__link">Услуги</a></li>
+							<li class="footer__item"><a href="#" class="footer__link">Услуги</a></li>
+							<li class="footer__item"><a href="#" class="footer__link">Отзывы</a></li>
+						</ul>
+					</div>
+					<div class="footer__contact">
+						<div class="footer__title">Контакты</div>
+						<a href="tel:380732884891" class="footer__phone">+38 073 288 48 91</a>
+						<a href="mailto:info@nimet.io" class="footer__email">info@nimet.io</a>
+					</div>
 				</div>
 		</footer>
 	</div>
-	<script src="js/app.min.js?_v=20241118213710"></script>
+	<script src="js/app.min.js?_v=20241120180308"></script>
+	<script type="text/javascript">
+		(function(d, s, u, e, p) {
+			p = d.getElementsByTagName(s)[0], e = d.createElement(s), e.async = 1, e.src = u, p.parentNode.insertBefore(e, p);
+		})(document, 'script', 'https://script.ringostat.com/v4/3a/3a6b6ccd4bcc8a1d8ac01cf2b8490607c4718f3a.js');
+		var pw = function() {
+			if (typeof(ringostatAnalytics) === "undefined") {
+				setTimeout(pw, 100);
+			} else {
+				ringostatAnalytics.sendHit('pageview');
+			}
+		};
+		pw();
+	</script>
 </body>
 
 </html>
