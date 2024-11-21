@@ -251,11 +251,7 @@ textarea.input {
   color: #000
 }
 .title_watch span {
-  opacity: 0;
-  transition: opacity .4s ease-out 0s
-}
-.title_watch_line span {
-  transition: opacity .4s ease-out .2s
+  opacity: 0
 }
 .title_watch_line::after,
 .title_watch_line::before {
@@ -263,7 +259,12 @@ textarea.input {
   transition: width .6s ease-out
 }
 .loaded .title_watch._watcher-view span {
-  opacity: 1
+  -webkit-animation: animation-opacity .4s ease-out 0s forwards;
+  animation: animation-opacity .4s ease-out 0s forwards
+}
+.loaded .title_watch_line._watcher-view span {
+  -webkit-animation: animation-opacity .4s ease-out .2s forwards;
+  animation: animation-opacity .4s ease-out .2s forwards
 }
 .loaded ._watcher-view .block_watch {
   -webkit-animation: animation-opacity .6s ease-out .4s forwards;
@@ -1243,8 +1244,9 @@ textarea.input {
     -webkit-transform: rotate(45deg);
     transform: rotate(45deg)
   }
-  .title_watch_line span {
-    transition: opacity .4s ease-out 0s
+  .loaded .title_watch_line._watcher-view span {
+    -webkit-animation: animation-opacity .4s ease-out 0s forwards;
+    animation: animation-opacity .4s ease-out 0s forwards
   }
   .body-offers_watch {
     position: relative;
