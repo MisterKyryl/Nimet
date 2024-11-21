@@ -1361,6 +1361,9 @@ textarea.input {
     margin: 0 -1.5rem;
     padding: 0 1.5rem
   }
+  .body-about__items::-webkit-scrollbar {
+    display: none
+  }
   .body-about__button {
     max-width: 9.4375rem
   }
