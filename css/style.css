@@ -256,47 +256,49 @@ textarea.input {
 .title_watch_line::after,
 .title_watch_line::before {
   width: 0;
-  transition: width .6s ease-out
+  transition: width .8s ease-out
 }
 .loaded .title_watch._watcher-view span {
-  -webkit-animation: animation-opacity .4s ease-out 0s forwards;
-  animation: animation-opacity .4s ease-out 0s forwards
+  -webkit-animation: animation-opacity .6s ease-out 0s forwards;
+  animation: animation-opacity .6s ease-out 0s forwards
 }
 .loaded .title_watch_line._watcher-view span {
-  -webkit-animation: animation-opacity .4s ease-out .2s forwards;
-  animation: animation-opacity .4s ease-out .2s forwards
+  -webkit-animation: animation-opacity .6s ease-out .2s forwards;
+  animation: animation-opacity .6s ease-out .2s forwards
 }
 .loaded ._watcher-view .block_watch {
-  -webkit-animation: animation-opacity .6s ease-out .4s forwards;
-  animation: animation-opacity .6s ease-out .4s forwards
+  -webkit-animation: animation-opacity .6s ease-out .6s forwards;
+  animation: animation-opacity .6s ease-out .6s forwards
 }
 .loaded ._watcher-view .image_watch {
-  -webkit-animation: animation-opacity .8s ease-out .2s forwards;
-  animation: animation-opacity .8s ease-out .2s forwards
+  -webkit-animation: animation-opacity .6s ease-out .2s forwards;
+  animation: animation-opacity .6s ease-out .2s forwards
 }
 .body-offers_watch_1 {
   position: relative;
   z-index: 1
 }
 .loaded .body-offers_watch_1._watcher-view {
-  -webkit-animation: animation-opacity .4s ease-out 0s forwards;
-  animation: animation-opacity .4s ease-out 0s forwards
+  -webkit-animation: animation-opacity .6s ease-out 0s forwards;
+  animation: animation-opacity .6s ease-out 0s forwards
 }
 .loaded .body-offers_watch_2._watcher-view {
-  -webkit-animation: animation-opacity .4s ease-out .2s forwards;
-  animation: animation-opacity .4s ease-out .2s forwards
+  -webkit-animation: animation-opacity .6s ease-out .2s forwards;
+  animation: animation-opacity .6s ease-out .2s forwards
 }
 .body-offers_watch_3 {
   position: relative;
   z-index: 1
 }
 .loaded .body-offers_watch_3._watcher-view {
-  -webkit-animation: animation-opacity .4s ease-out .4s forwards;
-  animation: animation-opacity .4s ease-out .4s forwards
+  -webkit-animation: animation-opacity .6s ease-out .4s forwards;
+  animation: animation-opacity .6s ease-out .4s forwards
 }
 @-webkit-keyframes animation-opacity {
   0% {
-    opacity: 0
+    opacity: 0;
+    -webkit-filter: blur(4px);
+    filter: blur(4px)
   }
   100% {
     opacity: 1
@@ -304,7 +306,9 @@ textarea.input {
 }
 @keyframes animation-opacity {
   0% {
-    opacity: 0
+    opacity: 0;
+    -webkit-filter: blur(4px);
+    filter: blur(4px)
   }
   100% {
     opacity: 1
@@ -1144,7 +1148,7 @@ textarea.input {
 @media (max-width:61.99875em) {
   .title_watch_line::after,
   .title_watch_line::before {
-    transition: width .4s ease-out
+    transition: width .6s ease-out
   }
   .our-partners__body {
     grid-template-columns: repeat(auto-fit,minmax(12.5rem,1fr))
@@ -1245,16 +1249,16 @@ textarea.input {
     transform: rotate(45deg)
   }
   .loaded .title_watch_line._watcher-view span {
-    -webkit-animation: animation-opacity .4s ease-out 0s forwards;
-    animation: animation-opacity .4s ease-out 0s forwards
+    -webkit-animation: animation-opacity .6s ease-out 0s forwards;
+    animation: animation-opacity .6s ease-out 0s forwards
   }
   .body-offers_watch {
     position: relative;
     z-index: 1
   }
   .loaded .body-offers_watch._watcher-view {
-    -webkit-animation: animation-opacity .4s ease-out 0s forwards;
-    animation: animation-opacity .4s ease-out 0s forwards
+    -webkit-animation: animation-opacity .6s ease-out 0s forwards;
+    animation: animation-opacity .6s ease-out 0s forwards
   }
   .item-our-cases {
     flex-direction: column

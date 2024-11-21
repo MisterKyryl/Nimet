@@ -285,7 +285,7 @@
         getScrollWatcherConfig(paramsWatch) {
             let configWatcher = {};
             if (document.querySelector(paramsWatch.root)) configWatcher.root = document.querySelector(paramsWatch.root); else if (paramsWatch.root !== "null") this.scrollWatcherLogging(`Эмм... батьківського об'єкта ${paramsWatch.root} немає на сторінці`);
-            configWatcher.rootMargin = paramsWatch.margin;
+            configWatcher.rootMargin = "-200px";
             if (paramsWatch.margin.indexOf("px") < 0 && paramsWatch.margin.indexOf("%") < 0) {
                 this.scrollWatcherLogging(`йой, налаштування data-watch-margin потрібно задавати в PX або %`);
                 return;
