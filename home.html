@@ -10,7 +10,7 @@
 			opacity: 0;
 		}
 	</style>
-	<link rel="stylesheet" href="css/style.min.css?_v=20241121194957">
+	<link rel="stylesheet" href="css/style.min.css?_v=20241121201107">
 	<link rel="shortcut icon" href="favicon.ico">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
@@ -52,13 +52,12 @@
 					</p>
 					<button type="button" class="main__button button">хочу консультацию</button>
 				</div>
-				<div class="main__image image_watch">
-					<img src="img/main/main/bg.webp" class="main__picture" alt="Image">
-				</div>
+				<div class="main__image image_watch"></div>
 			</section>
 			<section class="page__about about">
 				<div class="about__container">
-					<h2 data-watch data-watch-once data-watch-margin="-200px" class="about__title title title--small title_watch title_watch_line"><span>Про компанию</span>
+					<h2 data-watch data-watch-once data-watch-margin="-200px" class="about__title title title--small title_watch title_watch_line">
+						<span>Про компанию</span>
 					</h2>
 					<div class="about__body body-about">
 						<div class="body-about__image">
@@ -122,8 +121,10 @@
 			</section>
 			<div class="page__consultation consultation">
 				<div class="consultation__container">
-					<h2 data-watch data-watch-once data-watch-margin="-200px" class="consultation__title title title--small title_watch title_watch_line"><span>зАПИСЬ НА
-							КОНСУЛЬТАЦИЮ</span></h2>
+					<h2 data-watch data-watch-once data-watch-margin="-200px" class="consultation__title title title--small title_watch title_watch_line">
+						<span>зАПИСЬ НА
+							КОНСУЛЬТАЦИЮ</span>
+					</h2>
 					<form data-no-validate data-ajax action="sendmail/sendmail.php" method="POST" class="consultation__form form-consultation">
 						<h4 class="form-consultation__title">ОБСУДИМ cотрудничество?</h4>
 						<input autocomplete="off" type="text" name="form[text]" placeholder="Ваше имя" class="form-consultation__input form-consultation__input_name input" required>
@@ -165,7 +166,7 @@
 				</div>
 		</footer>
 	</div>
-	<script src="js/app.min.js?_v=20241121194957"></script>
+	<script src="js/app.min.js?_v=20241121201107"></script>
 	<script type="text/javascript">
 		(function(d, s, u, e, p) {
 			p = d.getElementsByTagName(s)[0], e = d.createElement(s), e.async = 1, e.src = u, p.parentNode.insertBefore(e, p);
