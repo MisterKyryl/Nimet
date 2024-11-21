@@ -526,17 +526,8 @@ textarea.input {
 .main__image {
   opacity: 0;
   position: absolute;
-  width: 100%;
-  height: 100%;
-  right: 0;
-  bottom: 0
-}
-.main__picture {
-  content: "";
-  position: absolute;
   bottom: 0;
-  -o-object-fit: cover;
-  object-fit: cover
+  background: url(../img/main/main/bg.webp) no-repeat center center/cover
 }
 .main__container {
   opacity: 0;
@@ -946,13 +937,13 @@ textarea.input {
   .main {
     height: 62.4375rem
   }
-  .main__picture {
+  .main__image {
     width: 61.5625rem
   }
-  .main__picture {
+  .main__image {
     height: 60.125rem
   }
-  .main__picture {
+  .main__image {
     right: .0000000625rem
   }
   .main__title:not(:last-child) {
@@ -1104,13 +1095,13 @@ textarea.input {
   .main {
     height: 32.5rem
   }
-  .main__picture {
+  .main__image {
     width: 32.0625rem
   }
-  .main__picture {
+  .main__image {
     height: 31.25rem
   }
-  .main__picture {
+  .main__image {
     right: -9.375rem
   }
   .form-consultation__title {
@@ -1557,13 +1548,13 @@ textarea.input {
   .main {
     height: clamp(32.5rem ,21.6792168675rem + 36.0692771084vw ,62.4375rem)
   }
-  .main__picture {
+  .main__image {
     width: clamp(32.0625rem ,21.3998493976rem + 35.5421686747vw ,61.5625rem)
   }
-  .main__picture {
+  .main__image {
     height: clamp(31.25rem ,20.813253012rem + 34.7891566265vw ,60.125rem)
   }
-  .main__picture {
+  .main__image {
     right: clamp(-9.375rem ,-12.7635542395rem + 11.2951807982vw ,.0000000625rem)
   }
 }
