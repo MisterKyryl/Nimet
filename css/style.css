@@ -544,6 +544,7 @@ textarea.input {
   max-width: 22.3125rem
 }
 .about {
+  overflow: hidden;
   position: relative
 }
 .about__container {
