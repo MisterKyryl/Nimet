@@ -1,181 +1,187 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
+	<title>Nimet</title>
 	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no">
+	<style>
+		body {
+			opacity: 0;
+		}
+	</style>
+	<link rel="stylesheet" href="css/style.min.css?_v=20241125175632">
+	<link rel="shortcut icon" href="favicon.ico">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Layout «Nimet»</title>
 </head>
 
 <body>
-	<div class="rootpage">
-		<h1>Layout «Nimet»</h1>
-		<!-- <div class="rootpage__info">
-			Features of the project
-		</div> -->
-		<h2>Ready pages:</h2>
-		<ol class="rootpage__list">
-			<li><a target="_blank" href="home.html">Main</a></li>
-			<li><a target="_blank" href="our-cases.html">Our Cases</a></li>
-			<li><a target="_blank" href="our-partners.html">Our Partners</a></li>
-		</ol>
-		<!-- <h2>Popups:</h2>
-		<ol class="rootpage__list">
-			<li><a target="_blank" href="home.html#"></a></li>
-		</ol> -->
+	<div class="wrapper">
+		<header class="header">
+			<div class="header__container">
+				<a href="index.html" class="header__logo">
+					<img src="img/logo.webp" alt="Image">
+				</a>
+				<div class="header__menu menu">
+					<nav class="menu__body">
+						<ul class="menu__list">
+							<li class="menu__item"><a href="#" data-goto="#main" data-goto-header class="menu__link">Главная</a></li>
+							<li class="menu__item"><a href="#" data-goto="#about" data-goto-header class="menu__link">про компанию</a></li>
+							<li class="menu__item"><a href="#" data-goto="#offers" data-goto-header class="menu__link">Услуги</a></li>
+							<li class="menu__item"><a href="#" data-goto="#consultation" data-goto-header class="menu__link">Записаться</a></li>
+						</ul>
+						<div class="menu__contact">
+							<div class="menu__title">Контакты</div>
+							<a href="mailto:info@nimet.io" class="menu__email">info@nimet.io</a>
+						</div>
+					</nav>
+				</div>
+				<a data-da=".menu__contact,767.98 ,1" href="tel:380732884891" class="header__phone">
+					+38 073 288 48 91
+				</a>
+				<button type="button" class="menu__icon icon-menu"><span></span></button>
+			</div>
+		</header>
+		<main class="page">
+			<section id="main" data-watch data-watch-once class="page__main main">
+				<div class="main__container block_watch">
+					<h1 class="main__title title">Разработка, внедрение BPMS и процессного управления</h1>
+					<p class="main__text text">
+						Ми надаємо бухгалтерські та юридичні послуги
+						<span>українським і зарубіжним компаніям в Україні.</span>
+					</p>
+					<a href="#" data-goto="#consultation" data-goto-header class="main__button button">хочу консультацию</a>
+				</div>
+				<div class="main__image image_watch"></div>
+			</section>
+			<section id="about" class="page__about about">
+				<div class="about__container">
+					<h2 data-watch data-watch-once data-watch-threshold="1" class="about__title title title--small title_watch title_watch_line">
+						<span>Про компанию</span>
+					</h2>
+					<div class="about__body body-about">
+						<div class="body-about__image">
+							<img src="img/main/about/01.webp" class="body-about__picture" alt="Image">
+						</div>
+						<div class="body-about__content">
+							<p class="body-about__text text">
+								Мы максимально не выпячиваем свой бренд. У каждого клиента система в цветах и логотипах его компании. Мы ненавязчиво помогаем
+								решить хаос в компании.
+							</p>
+							<div class="body-about__items">
+								<div class="body-about__item item-about">
+									<div class="item-about__value">1+</div>
+									<div class="item-about__text">Мы ненавязчиво помогаем решить хаос в компании.</div>
+								</div>
+								<div class="body-about__item item-about item-about_border">
+									<div class="item-about__value">2+</div>
+									<div class="item-about__text">Мы максимально не выпячиваем свой бренд. </div>
+								</div>
+								<div class="body-about__item item-about">
+									<div class="item-about__value">3+</div>
+									<div class="item-about__text">У каждого клиента система в цветах и логотипах его компании.</div>
+								</div>
+							</div>
+							<!-- <a href="our-cases.html" class="body-about__button button">Кейсы</a> -->
+							<a href="#" data-goto="#consultation" data-goto-header class="main__button button">записаться</a>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section id="offers" class="page__offers offers">
+				<div class="offers__container">
+					<h2 data-watch data-watch-once data-watch-threshold="1" class="offers__title title title--small title_watch"><span>предложения</span>
+					</h2>
+					<div class="offers__body body-offers">
+						<div data-watch data-watch-once data-watch-threshold="0.3" class="body-offers__item body-offers_watch body-offers_watch_1">
+							<div class="body-offers__image">
+								<img src="img/main/offers/01.webp" class="body-offers__picture" alt="Image">
+							</div>
+							<p class="body-offers__text text">
+								У каждого клиента система в цветах и логотипах его компании.
+							</p>
+						</div>
+						<div data-watch data-watch-once data-watch-threshold="0.3" class="body-offers__item body-offers_watch body-offers_watch_2">
+							<div class="body-offers__image body-offers__line">
+								<img src="img/main/offers/02.webp" class="body-offers__picture" alt="Image">
+							</div>
+							<p class="body-offers__text text">
+								У каждого клиента система в цветах и логотипах его компании.
+							</p>
+						</div>
+						<div data-watch data-watch-once data-watch-threshold="0.3" class="body-offers__item body-offers_watch body-offers_watch_3">
+							<div class="body-offers__image">
+								<img src="img/main/offers/03.webp" class="body-offers__picture" alt="Image">
+							</div>
+							<p class="body-offers__text text">
+								У каждого клиента система в цветах и логотипах его компании.
+							</p>
+						</div>
+					</div>
+					<!-- <a href="our-partners.html" class="offers__button button">Партнёры</a> -->
+				</div>
+			</section>
+			<div id="consultation" class="page__consultation consultation">
+				<div class="consultation__container">
+					<h2 data-watch data-watch-once data-watch-threshold="1" class="consultation__title title title--small title_watch title_watch_line">
+						<span>зАПИСЬ НА
+							КОНСУЛЬТАЦИЮ</span>
+					</h2>
+					<form data-no-validate data-ajax action="sendmail/sendmail.php" method="POST" class="consultation__form form-consultation">
+						<h4 class="form-consultation__title">ОБСУДИМ cотрудничество?</h4>
+						<input autocomplete="off" type="text" name="form[text]" placeholder="Ваше имя" class="form-consultation__input form-consultation__input_name input" required>
+						<input autocomplete="off" type="tel" name="form[tel]" placeholder="Телефон" class="form-consultation__input input" required oninput="this.value = this.value.replace(/[^0-9+\-\(\)\s]/g, '')">
+						<input autocomplete="off" type="email" name="form[email]" placeholder="Почта" required class="form-consultation__input form-consultation__input_email input">
+						<textarea autocomplete="off" name="form[textarea]" placeholder="Коротко о проекте" class="form-consultation__input form-consultation__input_textarea input" required></textarea>
+						<button type="submit" class="form-consultation__button button button--fw">
+							<span class="form-consultation__button_pc">Отправить заявку</span>
+							<span class="form-consultation__button_mob">кейсы</span>
+						</button>
+					</form>
+					<div class="consultation__image">
+						<img src="img/main/consultation/01.webp" class="consultation__picture" alt="Image">
+					</div>
+				</div>
+			</div>
+		</main>
+		<footer class="footer">
+			<div class="footer__container">
+				<div class="footer__logo logo-footer">
+					<a href="index.html" class="logo-footer__link">
+						<img src="img/logo.webp" alt="Image">
+					</a>
+				</div>
+				<div class="footer__body">
+					<div class="footer__items">
+						<ul class="footer__list">
+							<li class="footer__item"><a href="#" data-goto="#main" data-goto-header class="footer__link">О НАС</a></li>
+							<li class="footer__item"><a href="#" data-goto="#about" data-goto-header class="footer__link">про компанию</a></li>
+							<li class="footer__item"><a href="#" data-goto="#offers" data-goto-header class="footer__link">Услуги</a></li>
+							<li class="footer__item"><a href="#" data-goto="#consultation" data-goto-header class="footer__link">Отзывы</a></li>
+						</ul>
+					</div>
+					<div class="footer__contact">
+						<div class="footer__title">Контакты</div>
+						<a href="tel:380732884891" class="footer__phone">+38 073 288 48 91</a>
+						<a href="mailto:info@nimet.io" class="footer__email">info@nimet.io</a>
+					</div>
+				</div>
+		</footer>
 	</div>
+	<script src="js/app.min.js?_v=20241125175632"></script>
+	<script type="text/javascript">
+		(function(d, s, u, e, p) {
+			p = d.getElementsByTagName(s)[0], e = d.createElement(s), e.async = 1, e.src = u, p.parentNode.insertBefore(e, p);
+		})(document, 'script', 'https://script.ringostat.com/v4/3a/3a6b6ccd4bcc8a1d8ac01cf2b8490607c4718f3a.js');
+		var pw = function() {
+			if (typeof(ringostatAnalytics) === "undefined") {
+				setTimeout(pw, 100);
+			} else {
+				ringostatAnalytics.sendHit('pageview');
+			}
+		};
+		pw();
+	</script>
 </body>
-<style>
-	@charset "UTF-8";
-	@import url("https://fonts.googleapis.com/css?family=Montserrat:regular,700&display=swap");
-
-	*,
-	*::before,
-	*::after {
-		padding: 0px;
-		margin: 0px;
-		border: 0px;
-		box-sizing: border-box;
-	}
-
-	html,
-	body {
-		height: 100%;
-		margin: 0;
-		padding: 0;
-		min-width: 320px;
-		width: 100%;
-		color: #e0eaff;
-		background: #282c34;
-	}
-
-	body {
-		font-family: Montserrat;
-		font-size: 100%;
-		line-height: 1;
-		font-size: 1rem;
-	}
-
-	a {
-		text-decoration: underline;
-		color: #ff6464;
-	}
-
-	a:visited {
-		text-decoration: underline;
-		color: #ff6464;
-	}
-
-	a:hover {
-		text-decoration: none;
-	}
-
-	ul li {
-		list-style: none;
-	}
-
-	img {
-		vertical-align: top;
-	}
-
-	.wrapper {
-		width: 100%;
-		min-height: 100%;
-		overflow: hidden;
-	}
-
-	.rootpage {
-		padding: 30px;
-		display: flex;
-		flex-direction: column;
-		align-items: flex-start;
-	}
-
-	@media (max-width: 767px) {
-		.rootpage {
-			padding: 30px 15px;
-		}
-	}
-
-	h1 {
-		color: #ff6464;
-		font-size: 2.5rem;
-		margin: 0px 0px 1.25rem 0px;
-	}
-
-	@media (max-width: 767px) {
-		h1 {
-			font-size: 1.85rem;
-			margin: 0px 0px 1.25rem 0px;
-		}
-	}
-
-	h2 {
-		color: #ff6464;
-		font-size: 1.25rem;
-		margin: 0px 0px 1rem 0px;
-	}
-
-	@media (max-width: 767px) {
-		h2 {
-			font-size: 1.125rem;
-			margin: 0px 0px 1rem 0px;
-		}
-	}
-
-	.rootpage__info {
-		line-height: 140%;
-		margin: 0px 0px 1.5rem 0px;
-	}
-
-	.rootpage__list {
-		margin: 0px 0px 2.25rem 1.25rem;
-	}
-
-	.rootpage__list li:not(:last-child) {
-		margin: 0px 0px 15px 0px;
-	}
-
-	.rootpage__contacts,
-	.rootpage__tnx {
-		border-radius: 50px;
-		padding: 20px 65px;
-		line-height: 140%;
-	}
-
-	@media (max-width: 767px) {
-
-		.rootpage__contacts,
-		.rootpage__tnx {
-			border-radius: 40px;
-			padding: 20px;
-		}
-	}
-
-	.rootpage__contacts {
-		background: #834f8f;
-	}
-
-	.rootpage__contacts a {
-		color: #ffeb3b;
-	}
-
-	.rootpage__tnx {
-		background: #286355;
-		margin: 0px 0px 1rem 0px;
-	}
-
-	::-webkit-scrollbar {
-		background-color: hsl(228, 4%, 15%);
-	}
-
-	::-webkit-scrollbar-thumb {
-		background-color: hsl(228, 4%, 25%);
-	}
-
-	::-webkit-scrollbar-thumb:hover {
-		background-color: hsl(228, 4%, 35%);
-	}
-</style>
 
 </html>

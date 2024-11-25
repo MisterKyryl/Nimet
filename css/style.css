@@ -645,7 +645,12 @@ textarea.input {
   position: relative
 }
 .offers__container {
-  max-width: 59.75rem
+  max-width: 59.75rem;
+  display: flex;
+  flex-direction: column
+}
+.offers__button {
+  align-self: center
 }
 .body-offers {
   display: flex;
@@ -655,6 +660,9 @@ textarea.input {
   -moz-column-gap: 1.25rem;
   column-gap: 1.25rem;
   row-gap: 2.5rem
+}
+.body-offers:not(:last-child) {
+  margin-bottom: 2.5rem
 }
 .body-offers__item {
   opacity: 0;
